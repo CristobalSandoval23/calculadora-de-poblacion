@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.btn{
+    
+    background:rgb(125, 158, 87);
+}
+.container-data-ecuation{
+
+    height: 300px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.container-data{
+    display: flex;
+    justify-content:space-between;
+}
+
+#text{
+    width: 50px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    font-size: 40px;
+    border-radius: 10px;
+}
