@@ -10,7 +10,7 @@ const d = document,
         resolveConfianza = Math.pow(confianza,2);
         resolveError = Math.pow(error,2);
         resolve = Math.floor((((resolveConfianza*(exito*fracaso))*muestra))/((resolveError*(muestra-1))+(resolveConfianza*(exito*fracaso))))
-        console.log(resolve);
+        return resolve;
     }
 
 
@@ -23,12 +23,12 @@ const d = document,
         var error = $btn[4].value;
 
         resultado = Ecuacion(muestra, confianza, exito, fracaso, error)
+        console.log(resultado )
         if (resultado === undefined){
             resultado = "Coloca bien los Nº o llena todas las casillas"
         }
         $text.textContent = `${resultado}`;
 
-        console.log(resultado )
     }
     )
 
